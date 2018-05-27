@@ -2,6 +2,18 @@
   detail {{departmentId}}
 </p>
 <div>
+  <button (click)="showOverview()" >
+    overview
+  </button>
+  &nbsp;
+  <button (click)="showContact()" >
+    contact
+  </button>
+</div>
+<div>
+  <router-outlet></router-outlet>
+</div>
+<div>
   <a (click)="goPrevious()">previous</a> <br><br>
   <a (click)="goNext()">next</a>
 </div>
